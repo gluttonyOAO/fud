@@ -112,3 +112,5 @@ if ( !defined('ABSPATH') )
 
 /** 設定 WordPress 變數和包含的檔案。 */
 require_once(ABSPATH . 'wp-settings.php');
+
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
