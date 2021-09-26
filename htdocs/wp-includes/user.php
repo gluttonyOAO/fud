@@ -1728,6 +1728,11 @@ function wp_insert_user( $userdata ) {
 	$display_name = apply_filters( 'pre_user_display_name', $display_name );
 
 	$description = empty( $userdata['description'] ) ? '' : $userdata['description'];
+	//do customer thing for balance in user meta
+
+	$meta['balance']=get_option('plugin_blace', '1');
+
+
 
 	/**
 	 * Filters a user's description before the user is created or updated.
